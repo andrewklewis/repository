@@ -1,7 +1,9 @@
 module.exports = {
   content: [
-    "./index.html",    // Scans the main HTML file
-    "./src/**/*.css"   // Scans all CSS files in the 'src' folder
+    "./index.html",
+    "./public/**/*.html",
+    "./src/**/*.{html,js,jsx,ts,tsx,vue}", // Ensure all necessary file types are included
+    "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     extend: {},

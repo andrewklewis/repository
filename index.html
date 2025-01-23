@@ -4,10 +4,369 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andrew Kennedy Lewis</title>
-  <link href="dist/style.css" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class="mt-40 bg-gray-100 text-center">
-  <h1 class="text-4xl font-bold text-blue-500">Hello there, my awesome website is under construction!</h1>
-  <p class="mt-4 text-gray-700">Check back in when I'm done creating a visual feast!</p>
+<body class="relative bg-gradient-to-b from-black to-slate-900">
+  <div class="overflow-hidden">
+    <div class="relative w-screen sm:h-96 h-72 items-center justify-center sm:overflow-hidden border-0 after:content-[''] after:-translate-y-16 after:sm:-translate-y-0 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[4px] after:sm:block after:hidden after:opacity-50 after:bg-gradient-to-r after:from-[#44BCFF] after:via-[#FF44EC] after:to-[#FF675E] after:block">    
+      <div class="items-center transform flex flex-col" style="padding:56.25% 0 0 0;position:relative;">
+        <iframe 
+          src="https://player.vimeo.com/video/1049784090?background=1&autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479" 
+          frameborder="0" 
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
+          style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          class="sm:block hidden">
+        </iframe>
+        <div class="absolute z-30 items-center top-0 text-center w-screen sm:h-full h-72 backdrop-blur-xl mx-auto bg-black bg-opacity-75 p-8">
+          <div class="transform flex flex-col relative sm:translate-y-24 translate-y-2">
+            <h2 class="sm:hidden font-normal text-2xl text-center pt-4 pl-5 capitalize font-bold text-white">PORTFOLIO</h2> 
+            <h1 class="sm:text-7xl text-6xl sm:text-center text-center sm:pl-0 pl-3 capitalize font-bold text-white">Andrew Kennedy Lewis</h1>
+            
+            <div class="sm:block hidden sm:flex items-center max-w-6xl mx-auto pt-2 sm:flex-row ">
+              <p class="text-xl text-white capitalize">STORYTELLER</p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="w-8" viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+              </svg>
+              <p class="text-xl text-white capitalize">VIDEOGRAPHER</p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="w-8" viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+              </svg>
+              <p class="text-xl text-white capitalize">EDITOR</p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="w-8" viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+              </svg>
+              <p class="text-xl text-white capitalize">ANIMATOR</p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="w-8" viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+              </svg>
+              <p class="text-xl text-white capitalize">WEB DESIGN</p>            
+            </div>  
+          </div>  
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="lg:grid sm:px-8 px-12 relative pt-12 sm:pt-20 pb-40 mx-auto gap-12 grid grid-cols-1 lg:grid-cols-4 w-full max-w-7xl w-screen">
+      <!-- Video 1 -->
+      <div class="relative hover:scale-105 duration-1000 animate-tilt transform inline-flex group cursor-pointer" 
+        onclick="document.getElementById('videoButton1').click()">      
+        <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#FF675E] via-[#FF44EC] to-[#44BCFF] 
+          rounded-lg blur-md group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+        </div>
+        <button 
+          id="videoButton1"
+          data-modal-target="videoModal1" 
+          data-modal-toggle="videoModal1" 
+          data-video-id="1048692721"
+          class="relative w-full h-72 bg-gray-900 rounded-xl pointer-events-none text-white text-lg font-bold transition-all 
+          duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 flex items-center justify-center overflow-hidden">        
+          <div class="flex absolute top-6 flex-col"> 
+            <img id="videoThumbnail1" class="z-40 sm:w-56 w-64 h-36 top-0 object-cover rounded opacity-90 transition-opacity duration-300 group-hover:opacity-100" 
+              src="" alt="Video Thumbnail">
+            <div class="pt-5 text-center">
+              <h2 class="text-white text-2xl">Product Promo</h2>
+              <p class="text-white font-normal">Animation & Videography</p>
+            </div>  
+          </div>    
+        </button>
+      </div>    
+      <div id="videoModal1" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
+        <div class="relative w-full h-full">
+          <button type="button" class="absolute top-4 right-4 text-white text-3xl" data-modal-hide="videoModal1">&times;</button>
+          <div class="w-full h-full flex items-center justify-center">
+            <iframe id="videoPlayer1" class="w-full h-full max-w-7xl max-h-screen" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>        
+      </div>
+
+
+
+      <!-- Video 2 -->
+      <div class="relative hover:scale-105 duration-1000 animate-tilt transform inline-flex group cursor-pointer" 
+        onclick="document.getElementById('videoButton2').click()">
+        <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] 
+          rounded-lg blur-md group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+        </div>
+        <button 
+          id="videoButton2"
+          data-modal-target="videoModal2" 
+          data-modal-toggle="videoModal2" 
+          data-video-id="1048707675"
+          class="relative w-full h-72 bg-gray-900 rounded-xl pointer-events-none text-white text-lg font-bold transition-all 
+          duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 flex items-center justify-center overflow-hidden">
+          <div class="flex absolute top-6 flex-col"> 
+            <img id="videoThumbnail2" class="z-40 sm:w-56 w-64 h-36 top-0 object-cover rounded opacity-90 transition-opacity duration-300 group-hover:opacity-100" 
+              src="" alt="Video Thumbnail">
+            <div class="pt-5 text-center">
+              <h2 class="text-white text-2xl">Product Promo</h2>
+              <p class="text-white font-normal">Animation</p>
+            </div>  
+          </div>    
+        </button>
+      </div>
+      <div id="videoModal2" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
+        <div class="relative w-full h-full">
+          <button type="button" class="absolute top-4 right-4 text-white text-3xl" data-modal-hide="videoModal2">&times;</button>
+          <div class="w-full h-full flex items-center justify-center">
+            <iframe id="videoPlayer1" class="w-full h-full max-w-7xl max-h-screen" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>        
+      </div>
+
+
+
+      <!-- Video 3 -->
+      <div class="relative hover:scale-105 duration-1000 animate-tilt transform inline-flex group cursor-pointer" 
+        onclick="document.getElementById('videoButton3').click()">
+        <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] 
+          rounded-lg blur-md group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+        </div>
+        <button 
+          id="videoButton3"
+          data-modal-target="videoModal3" 
+          data-modal-toggle="videoModal3" 
+          data-video-id="397231290"
+          class="relative w-full h-72 bg-gray-900 rounded-xl pointer-events-none text-white text-lg font-bold transition-all 
+          duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 flex items-center justify-center overflow-hidden">
+          <div class="flex absolute top-6 flex-col"> 
+            <img id="videoThumbnail3" class="z-40 sm:w-56 w-64 h-36 top-0 object-cover rounded opacity-90 transition-opacity duration-300 group-hover:opacity-100" 
+              src="" alt="Video Thumbnail">
+            <div class="pt-5 text-center">
+              <h2 class="text-white text-2xl">Event Opener</h2>
+              <p class="text-white font-normal">Animation</p>
+            </div>  
+          </div>    
+        </button>
+      </div>
+      <div id="videoModal3" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
+        <div class="relative w-full h-full">
+          <button type="button" class="absolute top-4 right-4 text-white text-3xl" data-modal-hide="videoModal3">&times;</button>
+          <div class="w-full h-full flex items-center justify-center">
+            <iframe id="videoPlayer1" class="w-full h-full max-w-7xl max-h-screen" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>        
+      </div>
+
+
+
+      <!-- Video 4 -->
+      <div class="relative hover:scale-105 duration-1000 animate-tilt transform inline-flex group cursor-pointer" 
+        onclick="document.getElementById('videoButton4').click()">
+        <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] 
+          rounded-lg blur-md group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+        </div>
+        <button 
+          id="videoButton4"
+          data-modal-target="videoModal4" 
+          data-modal-toggle="videoModal4" 
+          data-video-id="1049789263"
+          class="relative w-full h-72 bg-gray-900 rounded-xl pointer-events-none text-white text-lg font-bold transition-all 
+          duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 flex items-center justify-center overflow-hidden">
+          <div class="flex absolute top-6 flex-col"> 
+            <img id="videoThumbnail1" class="z-40 sm:w-56 w-64 h-36 top-0 object-cover rounded opacity-90 transition-opacity duration-300 group-hover:opacity-100" 
+              src="" alt="Video Thumbnail">
+            <div class="pt-5 text-center">
+              <h2 class="text-white text-2xl">Case Study</h2>
+              <p class="text-white font-normal">Videography & Editing</p>
+            </div>  
+          </div>    
+        </button>
+      </div>
+      <div id="videoModal4" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
+        <div class="relative w-full h-full">
+          <button type="button" class="absolute top-4 right-4 text-white text-3xl" data-modal-hide="videoModal4">&times;</button>
+          <div class="w-full h-full flex items-center justify-center">
+            <iframe id="videoPlayer4" class="w-full h-full max-w-7xl max-h-screen" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>        
+      </div>
+
+
+      <!-- Video 5 -->  
+      <div class="relative hover:scale-105 duration-1000 animate-tilt transform inline-flex group cursor-pointer" 
+        onclick="document.getElementById('videoButton5').click()">      
+        <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#FF675E] via-[#FF44EC] to-[#44BCFF] 
+          rounded-lg blur-md group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+        </div>
+        <button 
+          id="videoButton5"
+          data-modal-target="videoModal5" 
+          data-modal-toggle="videoModal5" 
+          data-video-id="1049834710"
+          class="relative w-full h-72 bg-gray-900 rounded-xl pointer-events-none text-white text-lg font-bold transition-all 
+          duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 flex items-center justify-center overflow-hidden">        
+          <div class="flex absolute top-6 flex-col"> 
+            <img id="videoThumbnail5" class="z-40 sm:w-56 w-64 h-36 top-0 object-cover rounded opacity-90 transition-opacity duration-300 group-hover:opacity-100" 
+              src="" alt="Video Thumbnail">
+            <div class="pt-5 text-center">
+              <h2 class="text-white text-2xl">Product Ad</h2>
+              <p class="text-white font-normal">Animation & Editing</p>
+            </div>  
+          </div>    
+        </button>
+      </div>    
+      <div id="videoModal5" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
+        <div class="relative w-full h-full">
+          <button type="button" class="absolute top-4 right-4 text-white text-3xl" data-modal-hide="videoModal5">&times;</button>
+          <div class="w-full h-full flex items-center justify-center">
+            <iframe id="videoPlayer5" class="w-full h-full max-w-7xl max-h-screen" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>        
+      </div>
+
+
+
+      <!-- Video 6 -->
+      <div class="relative hover:scale-105 duration-1000 animate-tilt transform inline-flex group cursor-pointer" 
+        onclick="document.getElementById('videoButton6').click()">
+        <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] 
+          rounded-lg blur-md group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+        </div>
+        <button 
+          id="videoButton6"
+          data-modal-target="videoModal6" 
+          data-modal-toggle="videoModal6" 
+          data-video-id="1049838111"
+          class="relative w-full h-72 bg-gray-900 rounded-xl pointer-events-none text-white text-lg font-bold transition-all 
+          duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 flex items-center justify-center overflow-hidden">
+          <div class="flex absolute top-6 flex-col"> 
+            <img id="videoThumbnail6" class="z-40 sm:w-56 w-64 h-36 top-0 object-cover rounded opacity-90 transition-opacity duration-300 group-hover:opacity-100" 
+              src="" alt="Video Thumbnail">
+            <div class="pt-5 text-center">
+              <h2 class="text-white text-2xl">Fundraising Video</h2>
+              <p class="text-white font-normal">Editing</p>
+            </div>  
+          </div>    
+        </button>
+      </div>
+      <div id="videoModal6" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
+        <div class="relative w-full h-full">
+          <button type="button" class="absolute top-4 right-4 text-white text-3xl" data-modal-hide="videoModal6">&times;</button>
+          <div class="w-full h-full flex items-center justify-center">
+            <iframe id="videoPlayer6" class="w-full h-full max-w-7xl max-h-screen" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>        
+      </div>
+
+
+
+      <!-- Video 7 -->
+      <div class="relative hover:scale-105 duration-1000 animate-tilt transform inline-flex group cursor-pointer" 
+        onclick="document.getElementById('videoButton7').click()">
+        <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] 
+          rounded-lg blur-md group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+        </div>
+        <button 
+          id="videoButton7"
+          data-modal-target="videoModal7" 
+          data-modal-toggle="videoModal7" 
+          data-video-id="1049840173"
+          class="relative w-full h-72 bg-gray-900 rounded-xl pointer-events-none text-white text-lg font-bold transition-all 
+          duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 flex items-center justify-center overflow-hidden">
+          <div class="flex absolute top-6 flex-col"> 
+            <img id="videoThumbnail7" class="z-40 sm:w-56 w-64 h-36 top-0 object-cover rounded opacity-90 transition-opacity duration-300 group-hover:opacity-100" 
+              src="" alt="Video Thumbnail">
+            <div class="pt-5 text-center">
+              <h2 class="text-white text-2xl">Kenynote Walkup</h2>
+              <p class="text-white font-normal">Animation</p>
+            </div>  
+          </div>    
+        </button>
+      </div>
+      <div id="videoModal7" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
+        <div class="relative w-full h-full">
+          <button type="button" class="absolute top-4 right-4 text-white text-3xl" data-modal-hide="videoModal7">&times;</button>
+          <div class="w-full h-full flex items-center justify-center">
+            <iframe id="videoPlayer7" class="w-full h-full max-w-7xl max-h-screen" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>        
+      </div>
+
+
+
+      <!-- Video 8 -->
+      <div class="relative hover:scale-105 duration-1000 animate-tilt transform inline-flex group cursor-pointer" 
+        onclick="document.getElementById('videoButton8').click()">
+        <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] 
+          rounded-lg blur-md group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+        </div>
+        <button 
+          id="videoButton8"
+          data-modal-target="videoModal8" 
+          data-modal-toggle="videoModal8" 
+          data-video-id="397251616"
+          class="relative w-full h-72 bg-gray-900 rounded-xl pointer-events-none text-white text-lg font-bold transition-all 
+          duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 flex items-center justify-center overflow-hidden">
+          <div class="flex absolute top-6 flex-col"> 
+            <img id="videoThumbnail8" class="z-40 sm:w-56 w-64 h-36 top-0 object-cover rounded opacity-90 transition-opacity duration-300 group-hover:opacity-100" 
+              src="" alt="Video Thumbnail">
+            <div class="pt-5 text-center">
+              <h2 class="text-white text-2xl">Speaker Sizzle Reel</h2>
+              <p class="text-white font-normal">Animation</p>
+            </div>  
+          </div>    
+        </button>
+      </div>
+      <div id="videoModal8" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
+        <div class="relative w-full h-full">
+          <button type="button" class="absolute top-4 right-4 text-white text-3xl" data-modal-hide="videoModal8">&times;</button>
+          <div class="w-full h-full flex items-center justify-center">
+            <iframe id="videoPlayer8" class="w-full h-full max-w-7xl max-h-screen" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>        
+      </div>
+    </div>   
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const videoButtons = document.querySelectorAll("[data-video-id]");
+
+        videoButtons.forEach((button) => {
+          const videoId = button.getAttribute("data-video-id");
+          const thumbnailImg = button.querySelector("img"); // Get the img inside the button
+          const oEmbedUrl = `https://vimeo.com/api/oembed.json?url=https://vimeo.com/${videoId}`;
+
+          fetch(oEmbedUrl)
+            .then((response) => response.json())
+            .then((data) => {
+              thumbnailImg.src = data.thumbnail_url; // Set thumbnail image src
+            })
+            .catch((error) => {
+              console.error("Error fetching thumbnail:", error);
+              thumbnailImg.src = "assets/images/default-thumbnail.png"; // Fallback image
+            });
+        });
+
+        // Modal open logic
+        document.body.addEventListener("click", (event) => {
+          const button = event.target.closest("[data-modal-toggle]");
+          if (!button) return;
+
+          const videoId = button.getAttribute("data-video-id");
+          const videoURL = `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+          const targetModal = document.getElementById(button.getAttribute("data-modal-target"));
+          const videoPlayer = targetModal.querySelector("iframe");
+
+          videoPlayer.src = videoURL;
+          targetModal.classList.remove("hidden");
+        });
+
+        // Modal close logic
+        document.body.addEventListener("click", (event) => {
+          const button = event.target.closest("[data-modal-hide]");
+          if (!button) return;
+
+          const modal = button.closest("[id^=videoModal]");
+          if (!modal) return;
+
+          const videoPlayer = modal.querySelector("iframe");
+          videoPlayer.src = ""; // Stop video playback
+          modal.classList.add("hidden");
+        });
+      });
+    </script>
+  </div>  
 </body>
 </html>
