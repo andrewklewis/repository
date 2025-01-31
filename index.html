@@ -5,40 +5,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andrew Kennedy Lewis</title>
   <link href="/dist/output.css" rel="stylesheet">
+  <script src="menu.js" defer></script>
+  <script src="loadNav.js" defer></script>
+  <script src="theme.js" defer></script>
+  
+  
 </head>
-<body class="relative bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">  
+<style>
+  /* Light Mode Mobile Menu */
+  .light-mode #mobile-menu {
+    background-color: rgba(255, 255, 255, 255) !important;
+  }
+
+  /* Dark Mode Mobile Menu */
+  .dark-mode #mobile-menu {
+    background-color: rgba(15, 23, 42, 0.9) !important;
+  }
+  /* 🌞 Light Mode Styles */
+  .light-mode {
+    background: linear-gradient(to right, #dedede 0%, #ffffff 50%, #dedede 100%) !important;
+    color: black !important;
+  }
+
+  /* Light Mode Backgrounds */
+  .light-mode .light-gradient-bg {
+    background: linear-gradient(to right, #dedede 0%, #ffffff 50%, #dedede 100%) !important;
+  }
+
+  .light-mode .light-solid-bg {
+    background: #ffffff !important; /* White to light gray */
+  }
+
+  /* Light Mode Text */
+  .light-mode .light-text {
+    background: linear-gradient(to right, #0058bd, #0058bd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .light-mode .mode-text {
+    color: black !important;
+  }
+
+  /* Light Mode Icons */
+  .light-mode .light-icon {
+    fill: #4A90E2 !important;
+  }
+
+  /* Light Mode Navigation */
+  .light-mode nav {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  /* 🌙 Dark Mode Styles */
+  .dark-mode {
+    background: linear-gradient(to right, #0f172a, #1e293b, #0f172a) !important;
+    color: white !important;
+  }
+
+  /* Dark Mode Backgrounds */
+  .dark-mode .dark-gradient-bg {
+    background: linear-gradient(to right, #0f172a, #1e293b, #0f172a) !important;
+  }
+
+  .dark-mode .dark-solid-bg {
+    background: #0f172a !important;
+  }
+
+  /* Dark Mode Text */
+  .dark-mode .dark-text {
+    color: white !important;
+  }
+
+  /* Dark Mode Icons */
+  .dark-mode .dark-icon {
+    fill: white !important;
+  }
+
+  /* Dark Mode Navigation */
+  .dark-mode nav {
+    background-color: rgba(15, 23, 42, 0.9) !important;
+  }
+
+  /* 🌓 Toggle Button */
+  .light-mode #themeToggle {
+    background: linear-gradient(to right, #9013FE, #4A90E2);
+    color: white;
+    border: none;
+  }
+
+  .dark-mode #themeToggle {
+    background: linear-gradient(to right, #4A90E2, #9013FE);
+    color: white;
+    border: none;
+  }
+  /* Light Mode Navigation Links */
+  .light-mode nav a {
+    color: black !important;
+  }
+
+  .light-mode nav a:hover {
+    
+    color: black !important;
+  }
+
+  /* Dark Mode Navigation Links */
+  .dark-mode nav a {
+    color: white !important;
+  }
+
+  .dark-mode nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+  }
+
+</style>
+
+<body class="relative bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+  <div class="flex absolute right-44 sm:right-32 top-5 flex-row space-x-2 z-50 flex items-center">
+    <label class="relative inline-flex z-50 items-center cursor-pointer">
+      <input type="checkbox" id="themeToggle" class="sr-only peer">
+      <div class="w-12 z-50 h-6 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-5 peer-checked:after:bg-white after:content-[''] after:absolute  after:left-1 after:bg-gray-600 after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:top-0.5  after:transition-all"></div>
+    </label>
+    <span id="darkText" class="text-sm text-white">DARK</span>
+    <span id="lightText" class="text-sm text-black hidden">LIGHT</span>
+  </div>
+  <div class="relative z-40" id="nav-placeholder"></div>
   <div class="overflow-hidden">
-    <div class="relative w-screen sm:pt-44 items-center justify-center">    
+          
+    <div class="relative w-screen sm:pt-32 items-center justify-center">    
       <div class="items-center transform flex flex-col">        
-        <div class="relative z-30 items-center text-center w-screen sm:h-full  mx-auto">
+        <div class="relative z-20 items-center text-center w-screen sm:h-full mx-auto">
           <div class="transform flex flex-col items-center relative">
             <h2 class="sm:hidden font-normal text-2xl text-center pt-12 capitalize font-bold text-white">PORTFOLIO</h2> 
-            <h1 class="sm:text-8xl text-6xl sm:text-center z-40 transform sm:pt-0 sm:translate-y-0 translate-y-20 absolute mx-auto text-center capitalize font-bold text-white">ANDREW KENNEDY LEWIS</h1>
+            <h1 class="sm:text-8xl text-6xl sm:text-center z-30 transform sm:pt-0 sm:translate-y-0 translate-y-20 absolute mx-auto text-center capitalize font-bold text-white">ANDREW KENNEDY LEWIS</h1>
             <h1 class="sm:text-8xl text-6xl sm:text-center text-center capitalize font-bold bg-clip-text text-transparent z-20 blur-md bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]">ANDREW KENNEDY LEWIS</span></h1>            
-            <div class="sm:block hidden sm:flex items-center max-w-6xl mx-auto pt-2 sm:flex-row ">
-              <p class="text-2xl text-white capitalize">STORYTELLER</p>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="w-8" viewBox="0 0 16 16">
+            <div class="sm:block hidden sm:flex items-center max-w-6xl mx-auto pt-4 sm:flex-row ">
+              <p class="text-3xl text-white capitalize mode-text">STORYTELLER</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 icon-white" fill="white" viewBox="0 0 16 16">
                 <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
               </svg>
-              <p class="text-2xl text-white capitalize">VIDEOGRAPHER</p>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="w-8" viewBox="0 0 16 16">
+              <p class="text-3xl text-white capitalize mode-text">VIDEOGRAPHER</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 icon-white" fill="white" viewBox="0 0 16 16">
                 <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
               </svg>
-              <p class="text-2xl text-white capitalize">EDITOR</p>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="w-8" viewBox="0 0 16 16">
+              <p class="text-3xl text-white capitalize mode-text">EDITOR</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 icon-white" fill="white" viewBox="0 0 16 16">
                 <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
               </svg>
-              <p class="text-2xl text-white capitalize">ANIMATOR</p>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="w-8" viewBox="0 0 16 16">
+              <p class="text-3xl text-white capitalize mode-text">ANIMATOR</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 icon-white" fill="white" viewBox="0 0 16 16">
                 <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
               </svg>
-              <p class="text-2xl text-white capitalize">WEB DESIGN</p>            
-            </div>  
-          </div>  
+              <p class="text-3xl text-white capitalize mode-text">WEB DESIGN</p>
+            </div>          
+          </div>
         </div>
       </div>
     </div>
-    <div class="sm:block hidden">
+    <div class="sm:pt-20 sm:block hidden">
       <div class="grid sm:px-8 flex items-center px-12 relative 2xl:pt-36 sm:pt-28 mx-auto grid-cols-12 gap-12 w-full max-w-7xl w-screen">
         <!-- Video 1 -->
         <div class="col-span-7 h-96 relative hover:scale-105 duration-1000 animate-tilt transform inline-flex group cursor-pointer" 
@@ -644,9 +769,7 @@
           </div>
         </div>        
       </div>
-    </div>   
-    
-    
+    </div>  
 
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>

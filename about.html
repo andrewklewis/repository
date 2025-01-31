@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Andrew</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="menu.js" defer></script>
+  <script src="loadNav.js" defer></script>
+  <script src="theme.js" defer></script>  
+</head>
+<style>
+  /* Light Mode Mobile Menu */
+  .light-mode #mobile-menu {
+    background-color: rgba(255, 255, 255, 255) !important;
+  }
+
+  /* Dark Mode Mobile Menu */
+  .dark-mode #mobile-menu {
+    background-color: rgba(15, 23, 42, 0.9) !important;
+  }
+  /* 🌞 Light Mode Styles */
+  .light-mode {
+    background: linear-gradient(to right, #dedede 0%, #ffffff 50%, #dedede 100%) !important;
+    color: black !important;
+  }
+
+  /* Light Mode Backgrounds */
+  .light-mode .light-gradient-bg {
+    background: linear-gradient(to right, #dedede 0%, #ffffff 50%, #dedede 100%) !important;
+  }
+
+  .light-mode .light-solid-bg {
+    background: #ffffff !important; /* White to light gray */
+  }
+
+  /* Light Mode Text */
+  .light-mode .light-text {
+    background: linear-gradient(to right, #0058bd, #0058bd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .light-mode .mode-text {
+    color: black !important;
+  }
+
+  /* Light Mode Icons */
+  .light-mode .light-icon {
+    fill: #4A90E2 !important;
+  }
+
+  /* Light Mode Navigation */
+  .light-mode nav {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  /* 🌙 Dark Mode Styles */
+  .dark-mode {
+    background: linear-gradient(to right, #0f172a, #1e293b, #0f172a) !important;
+    color: white !important;
+  }
+
+  /* Dark Mode Backgrounds */
+  .dark-mode .dark-gradient-bg {
+    background: linear-gradient(to right, #0f172a, #1e293b, #0f172a) !important;
+  }
+
+  .dark-mode .dark-solid-bg {
+    background: #0f172a !important;
+  }
+
+  /* Dark Mode Text */
+  .dark-mode .dark-text {
+    color: white !important;
+  }
+
+  /* Dark Mode Icons */
+  .dark-mode .dark-icon {
+    fill: white !important;
+  }
+
+  /* Dark Mode Navigation */
+  .dark-mode nav {
+    background-color: rgba(15, 23, 42, 0.9) !important;
+  }
+
+  /* 🌓 Toggle Button */
+  .light-mode #themeToggle {
+    background: linear-gradient(to right, #9013FE, #4A90E2);
+    color: white;
+    border: none;
+  }
+
+  .dark-mode #themeToggle {
+    background: linear-gradient(to right, #4A90E2, #9013FE);
+    color: white;
+    border: none;
+  }
+  /* Light Mode Navigation Links */
+  .light-mode nav a {
+    color: black !important;
+  }
+
+  .light-mode nav a:hover {
+    
+    color: black !important;
+  }
+
+  /* Dark Mode Navigation Links */
+  .dark-mode nav a {
+    color: white !important;
+  }
+
+  .dark-mode nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+  }
+
+</style>
+
+<body class="relative bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+  <div class="">
+    <div class="flex absolute right-44 sm:right-32 top-5 flex-row space-x-2 z-50 flex items-center">
+      <label class="relative inline-flex items-center cursor-pointer">
+        <input type="checkbox" id="themeToggle" class="sr-only peer">
+        <div class="w-12 h-6 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-5 peer-checked:after:bg-white after:content-[''] after:absolute  after:left-1 after:bg-gray-600 after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:top-0.5  after:transition-all"></div>
+      </label>
+      <span id="darkText" class="text-sm text-white">DARK</span>
+      <span id="lightText" class="text-sm text-black hidden">LIGHT</span>
+    </div>
+    <div class="relative z-40" id="nav-placeholder"></div>
+            
+      <div class="relative mx-auto pt-12 sm:pt-24 pb-40 max-w-7xl items-center justify-center">    
+        <div class="mx-auto sm:grid sm:gap-12 sm:grid-cols-2">
+          <div class="flex justify-right mx-auto item-right sm:col-span-1" >
+            <div class="flex mx-auto w-full w-full sm:pl-28  h-full sm:items-right sm:px-0 px-12 sm:justify-end">
+              <img src="assets/images/andrew.png" alt="Andrew" class="rounded-lg">
+            </div>
+            
+          </div>
+          <div class="relative pt-4 sm:px-0 pl-16 pr-8 z-30 sm:pl-0 flex flex-col sm:col-span-1 text-left">
+            <h1 class="sm:text-6xl text-6xl sm:text-left z-30 transform sm:pt-0 pt-2 sm:translate-y-0 absolute mx-auto text-center capitalize font-bold text-white">ABOUT ME</h1>
+            <h1 class="sm:text-6xl text-6xl sm:pt-0 pt-2  sm:text-left text-left capitalize font-bold bg-clip-text text-transparent z-20 blur-md bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]">ABOUT ME</span></h1> 
+            <p class="text-white pr-8 sm:pr-16 sm:pt-4 pt-4 text-md w-full font-normal">I’m a dedicated multimedia professional with 12 years of experience in video production and graphic design, along with three years in front-end web development. Currently, I run the website and video production for a software company, blending creativity with technical expertise to craft engaging digital experiences.</p>
+            <p class="text-white pr-8 sm:pt-4 pt-4 text-md w-full font-normal">Throughout my career, I’ve worked with non-profits, publishers, and production companies, both in-house and as a freelancer. From shooting and editing to animation and web design, I thrive on bringing ideas to life and telling compelling stories. I’ve had a passion for storytelling for as long as I can remember, and I take pride in turning creative visions into reality. Challenge me, and I won’t let you down.</p>
+            
+          </div> 
+
+          
+        </div>
+      </div>
+    </div>  
+  </div>  
+    
+
+    
+   
+</body>
+</html>
