@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navPlaceholder = document.getElementById("nav-placeholder");
 
   if (navPlaceholder) {
-    fetch("nav.html")
+    fetch("/nav.html")
       .then(response => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
